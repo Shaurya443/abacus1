@@ -1,15 +1,12 @@
 class Abacus {
+  
   var abacus = new Abacus("canvas_id", {number_of_bars:15, frame_color:brown, bar_color:grey, slider_color:green, height:100, weight:100});
 abacus.drawFrame()
 abacus.defaultSetup()
 abacus.setUpNumber()
-
 abcaus.pushDownUpper(bar_number)
-
 abcaus.pushUpUpper(bar_number)
-
 abcaus.pushDownLower(bar_number)
-
 abcaus.pushUpLower(bar_number)
 
         this.canvas = document.getElementById(canvas_id);
@@ -67,9 +64,9 @@ abcaus.pushUpLower(bar_number)
         this.frame_width -= this.x_space_from_border * 2;
     }
     setColors(frame_color, bar_color, slider_color) {
-        this.frame_color = frame_color;
-        this.bar_color = bar_color;
-        this.slider_color = slider_color;
+        this.frame_color = brown;
+        this.bar_color = grey;
+        this.slider_color = green;
     }
     drawFrameCrossBars() {
         this.ctx.fillStyle = this.frame_color;
