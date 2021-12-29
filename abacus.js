@@ -1,5 +1,17 @@
 class Abacus {
-    constructor(canvas_id, {number_of_bars=10,frame_color="saddlebrown",bar_color="grey",slider_color="green",width="100%",height="100%"} = {}) {
+  var abacus = new Abacus("canvas_id", {number_of_bars:15, frame_color:brown, bar_color:grey, slider_color:green, height:100, weight:100});
+abacus.drawFrame()
+abacus.defaultSetup()
+abacus.setUpNumber()
+
+abcaus.pushDownUpper(bar_number)
+
+abcaus.pushUpUpper(bar_number)
+
+abcaus.pushDownLower(bar_number)
+
+abcaus.pushUpLower(bar_number)
+
         this.canvas = document.getElementById(canvas_id);
 
         this.setColors(frame_color, bar_color, slider_color);
@@ -31,7 +43,7 @@ class Abacus {
         this.mid_frame_y_coord = (this.bar_height * 0.25) + this.y_space_from_border + (this.frame_height * 0.5);
         //this.bottom_frame_y_coord = this.canvas_height - this.y_space_from_border - this.frame_height;
         this.bottom_frame_y_coord = this.bar_height + this.y_space_from_border - this.frame_height;
-    }
+    
     stringLengthToNumber(string_length, percentage_of_length) {
         var number_length;
         string_length = string_length.replace(/^\s+|\s+$/g, '');
